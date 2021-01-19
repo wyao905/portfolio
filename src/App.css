@@ -1,38 +1,144 @@
-.App {
+.app {
+  height: 100vh;
+}
+
+.pic-container {
+  margin: 12px;
+  overflow: hidden;
+  width: 200px;
+  height: 125px;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
   text-align: center;
+  transition: box-shadow .2s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlay-text {
+  font-size: 18px;
+  color: #ffffff;
+  visibility: hidden;
+  margin: 0;
+  padding-top: 36px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  background: rgba(0, 0, 0, 0.65);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pic-container:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.55);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pic-container:hover .overlay-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.link-button-container {
+  margin: 60px 12px 0 0;
+  padding: 6px;
+}
+
+.link-button {
+  border: none;
+  border-radius: 24px;
+  background-color: #ac3b61;
+  font-size: 13px;
+  color: #ffffff;
+  outline: none;
+  width: 180px;
+  height: 36px;
+}
+
+.link-button:hover {
+  background-color: #ce6085;
+}
+
+.link-button:active {
+  filter: brightness(80%);
+}
+
+.slider-window{
+  margin-top: 24px;
+  padding: 24px 0;
+  height: 420px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bab2b5;
+  border-radius: 12px;
+}
+
+.slide-active {
+  width: 100%;
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.picture {
+  display: block;
+  margin: auto;
+  height: auto;
+  max-height: 420px;
+  width: auto;
+  max-width: 528px;
+}
+
+.right-arrow {
+  position: relative;
+  right: 36px;
+  width: 24px;
+  height: auto;
+  color: #000000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: relative;
+  left: 36px;
+  width: 24px;
+  height: auto;
+  color: #000000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.skill-icon-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 120px;
 }
 
-.App-link {
-  color: #61dafb;
+.skill-icon {
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  border: solid #ffffff 2px;
+  border-radius: 6px;
+  align-self: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skill-label {
+  align-self: center;
+}
+
+#project-details {
+  transition: box-shadow .2s ease-in-out;
+}
+
+body {
+  background-color: #eee2dc;
 }
