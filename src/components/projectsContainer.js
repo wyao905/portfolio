@@ -8,8 +8,8 @@ function ProjectsContainer(props) {
     }
 
     return <div style={{
-        marginTop: '48px',
-        marginBottom: '48px'
+        marginTop: '36px',
+        marginBottom: '36px'
     }}>
         <div className='row' style={{
             display: 'flex',

@@ -24,7 +24,7 @@ function Skills(props) {
             marginBottom: '48px'
         }}>Technologies</h2>
         <div style={{
-            width: '1200px',
+            width: '70%',
             alignSelf: 'center'
         }}>
             <div style={{

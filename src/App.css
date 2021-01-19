@@ -39,8 +39,15 @@
 }
 
 .link-button-container {
-  margin: 60px 12px 0 0;
+  margin: 6px 12px 0 0;
   padding: 6px;
+}
+
+.empty-link-button-container {
+  margin: 6px 12px 0 0;
+  padding: 6px;
+  width: 180px;
+  height: 36px;
 }
 
 .link-button {
@@ -66,11 +73,11 @@
   margin-top: 24px;
   padding: 24px 0;
   height: 420px;
-  width: 600px;
+  width: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #bab2b5;
+  background-color: #e4ccc0;
   border-radius: 12px;
 }
 
@@ -91,26 +98,24 @@
   height: auto;
   max-height: 420px;
   width: auto;
-  max-width: 528px;
+  max-width: 408px;
 }
 
 .right-arrow {
-  position: relative;
-  right: 36px;
+  padding-right: 8px;
   width: 24px;
   height: auto;
-  color: #000000;
+  color: #123c69;
   z-index: 10;
   cursor: pointer;
   user-select: none;
 }
 
 .left-arrow {
-  position: relative;
-  left: 36px;
+  padding-left: 8px;
   width: 24px;
   height: auto;
-  color: #000000;
+  color: #123c69;
   z-index: 10;
   cursor: pointer;
   user-select: none;

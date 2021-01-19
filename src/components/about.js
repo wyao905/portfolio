@@ -5,7 +5,6 @@ function About() {
     return <div style={{
         display: 'flex',
         flexDirection: 'column',
-        // paddingBottom: '72px',
         height: 'auto',
         backgroundColor: '#123c69',
         color: '#ffffff'
@@ -14,14 +13,14 @@ function About() {
             display: 'block',
             marginLeft: 'auto',
             marginRight: 'auto',
-            padding: '84px 0 84px 96px',
+            padding: '84px 0',
             textAlign: 'center',
             width: '50%',
             fontSize: '18px'
         }}>
             Junior developer with a background in Mechanical Engineering and a passion for problem solving.
             I am looking for opportunities to help create something new and exciting that has the potential to be a positive impact in people's lives and help people connect.
-                </p>
+        </p>
         <Skills />
     </div>
 }
