@@ -23,7 +23,7 @@ function ProjectDetails(props) {
             <div style={{
                 display: 'flex',
                 flexWrap: 'wrap',
-                justifyContent: 'space-between',
+                justifyContent: 'space-evenly',
                 alignSelf: 'center'
             }}>
                 <Slideshow picArr={props.project.pics}
