@@ -22,14 +22,14 @@ function ProjectDetails(props) {
             }}>{props.project.name}</h2>
             <div style={{
                 display: 'flex',
-                justifyContent: 'center',
+                flexWrap: 'wrap',
+                justifyContent: 'space-evenly',
                 alignSelf: 'center'
             }}>
                 <Slideshow picArr={props.project.pics}
                     current={props.current}
                     setCurrent={props.setCurrent} />
                 <div style={{
-                    marginLeft: '24px',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',

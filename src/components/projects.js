@@ -21,7 +21,7 @@ const Projects = {
     },
     sudowiz: {
         name: 'Sudowiz',
-        summary: 'Sudoku wizard that helps solve puzzles.',
+        summary: 'Sudoku wizard created using React, Python, and Flask. Sudowiz help users solve sudoku puzzles.',
         pics: [{
             id: 1,
             src: `${process.env.PUBLIC_URL}/assets/sudowiz_1.png`,

@@ -29,6 +29,7 @@ function Skills(props) {
         }}>
             <div style={{
                 display: 'flex',
+                flexWrap: 'wrap',
                 justifyContent: 'space-evenly',
                 backgroundColor: '#062240'
             }}>

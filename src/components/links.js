@@ -4,7 +4,7 @@ function Links(props) {
     if (props.video !== '') {
         return <div style={{
             display: 'flex',
-            flexWrap: 'wrap',
+            flexDirection: 'column',
             paddingBottom: '84px'
         }}>
             <div className='link-button-container'><a href={props.github} target='_blank' rel="noopener noreferrer"><button className='link-button'>GitHub</button></a></div>
@@ -13,7 +13,7 @@ function Links(props) {
     } else if (props.demo !== '') {
         return <div style={{
             display: 'flex',
-            flexWrap: 'wrap',
+            flexDirection: 'column',
             paddingBottom: '84px'
         }}>
             <div className='link-button-container'><a href={props.github} target='_blank' rel="noopener noreferrer"><button className='link-button'>GitHub</button></a></div>
@@ -22,11 +22,10 @@ function Links(props) {
     } else {
         return <div style={{
             display: 'flex',
-            flexWrap: 'wrap',
+            flexDirection: 'column',
             paddingBottom: '84px'
         }}>
             <div className='link-button-container'><a href={props.github} target='_blank' rel="noopener noreferrer"><button className='link-button'>GitHub</button></a></div>
-            <div className='empty-link-button-container' />
         </div>
     }
 }
