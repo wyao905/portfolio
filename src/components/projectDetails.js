@@ -10,7 +10,7 @@ function ProjectDetails(props) {
                 display: 'flex',
                 flexDirection: 'column',
                 margin: '0',
-                width: '70%',
+                width: '75%',
                 padding: '48px 24px 0 24px',
                 marginBottom: '24px',
                 alignSelf: 'center',
@@ -23,7 +23,7 @@ function ProjectDetails(props) {
             <div style={{
                 display: 'flex',
                 flexWrap: 'wrap',
-                justifyContent: 'space-evenly',
+                justifyContent: 'space-between',
                 alignSelf: 'center'
             }}>
                 <Slideshow picArr={props.project.pics}
@@ -33,7 +33,7 @@ function ProjectDetails(props) {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
-                    maxWidth: '45%'
+                    maxWidth: '40%'
                 }}>
                     <div>
                         <div style={{
